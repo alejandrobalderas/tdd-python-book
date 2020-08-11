@@ -14,8 +14,9 @@ class NewVisitorTest(unittest.TestCase):
         self.browser.get("http://localhost:8000")
 
         # She notices the page title and header mention to-do lists
-        assert "Django" in browser.title
 
+        self.assertIn("To-Do", self.browser.title)
+        self.fail("Finish the test!")
         # She is invited to enter a to-do item straight away
 
         # She types "Buy peacock features" into a text box
