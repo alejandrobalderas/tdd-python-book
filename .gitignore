@@ -5,3 +5,4 @@ __pycache__
 book-example
 /static
 venv/
+.ennv
