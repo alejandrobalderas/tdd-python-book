@@ -26,6 +26,8 @@ def _get_latest_source():
 
 
 def _update_virtualenv():
+    site_folder = f"/home/{env.user}/sites/{env.host}"
+    run(f"mkdir -p {site_folder + '/.venv'}")
     run("pipenv install")
 
 
